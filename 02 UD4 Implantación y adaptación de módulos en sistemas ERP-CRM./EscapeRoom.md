@@ -1,7 +1,7 @@
 
 #odoo #docker
 
-# EscapeRoom
+# EscapeRoom (parametrización de Odoo)
 
 Tarea UD4. Implantación y adaptación de módulos en sistemas ERP-CRM.
 
