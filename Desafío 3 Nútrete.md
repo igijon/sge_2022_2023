@@ -2,9 +2,9 @@
 
 # Desafío 3: Nútrete
 
-Se quiere programar un modulo de Odoo para la compañía ********************Nútrete.******************** Este módulo se encargará de la gestión de la información para una clínica de dietistas y nutricionistas. Para ello, en nuestro sistema, tendremos **como mínimo** los siguientes datos:
+Se quiere programar un modulo de Odoo con el framework en Python para la compañía ********************Nútrete.******************** Este módulo se encargará de la gestión de la información para una clínica de dietistas y nutricionistas. Para ello, en nuestro sistema, tendremos **como mínimo** los siguientes datos:
 
-![Untitled](11%20📈%20SGE%202022-2023/Desafío%203%20Nútrete/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/Desafío%203%20Nútrete/Untitled.png)
 
 - **Clientes**: registrarán los datos habituales como datos personales, dni, foto, historial, motivo de consulta (cambiar de hábitos alimenticios, aprender a comer sano, aumentar de peso, asesoramiento en embarazo o lactancia, mejora de rendimiento deportivo, aprender a leer etiquetado de alimentos….)
 - **Dietistas**: registrarán los datos habituales como datos personales, dni, foto, especialidad (dieta vegetariana, paleo, detox, hipocalórica, proteica… investiga un poquito)…

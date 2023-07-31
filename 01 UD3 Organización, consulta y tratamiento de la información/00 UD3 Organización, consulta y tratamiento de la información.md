@@ -9,22 +9,22 @@
 
 [http://localhost:8069/web/database/selector](http://localhost:8069/web/database/selector)
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled.png)
 
 - Configuramos la compañía:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%201.png)
 
 - Debemos configurar la compañía en primer lugar, porque a la hora de añadir distintos componentes o módulos toma los datos de la compañía activa incluso en la BDD.
 - Creación y configuración de usuarios:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%202.png)
 
 - Podemos instalar y actualizar nuestros módulos en la sección de Aplicaciones.
 - Por defecto, instala unos módulos básicos que son el módulo web y poco más.
 - Podemos instalar todo lo necesario de una vez si pulsamos el modo de vista en árbol:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%203.png)
 
 # Herramieta de gestión de la BDD. Uso de psql.
 
@@ -34,7 +34,7 @@ Vamos a trabajar con una BDD PostgreSQL. Tenemos instalado además un cliente de
 docker-compose run --rm db psql -h db -U odoo prueba
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%204.png)
 
 <aside>
 💡 Debemos estar en el directorio donde tengamos docker-compose.yaml
@@ -43,53 +43,53 @@ docker-compose run --rm db psql -h db -U odoo prueba
 
 **Lista de roles que tenemos**
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%205.png)
 
 **Para crear una BDD:**
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%206.png)
 
 **Para ver las tablas de la BDD tenemos:**
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%207.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%208.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%208.png)
 
 Como no tenemos tablas, no hace nada.
 
 Si queremos ver las BDD que tenemos, podemos hacer:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%209.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%209.png)
 
 Si nos fijamos, nos lista las BDD creadas, las que acabamos de crear por el usuario odoo y las que se crearon desde el ERP.
 
 **Para conectar con una BDD concreta:**
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2010.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2010.png)
 
 Ahora, podemos utilizar SQL directamente:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2011.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2011.png)
 
 Si ahora listamos las tablas:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2012.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2012.png)
 
 Vamos a probar un insert:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2013.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2013.png)
 
 Si consultamos:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2014.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2014.png)
 
 Este cliente es un cliente completo por consola. Para obtener ayuda sobre los comandos:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2015.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2015.png)
 
 Para **salir**:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2016.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2016.png)
 
 # Estructura de la BDD.
 
@@ -101,7 +101,7 @@ Por defecto, cada una de las tablas está nombrada según al módulo al que pert
 
 A partir de ahora vamos a tener activado el modo desarrollador: **Ajustes (Opciones generales) ⇒ Activar modo desarrollador** (primera opción) dentro le la sección Herramientas de desarrollo.
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2017.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2017.png)
 
 # Organización y consulta de la información.
 
@@ -117,15 +117,15 @@ En los sistemas de planificación empresarial desarrollados en un lenguaje orien
 
 Habitualmente, la información de esos objetos se guarda en tablas con el mismo nombre:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2018.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2018.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2019.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2019.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2020.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2020.png)
 
 Podemos acceder a los modelos desde **Ajustes**, en modo desarrollador. Como ejemplo, puedes ver que el modelo Usuarios (res.users), se almacena en BDD en una tabla con el mismo nombre **res_users.**
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2021.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2021.png)
 
 # Tablas y vistas de la BDD
 
@@ -212,7 +212,7 @@ entrar en "Asistente de configuración" y editar el estado ‘Hecho’, de maner
 podamos volver a ejecutar el asistente para introducir de nuevo los parámetros de
 configuración que nos interesen en dicho asistente.
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2022.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2022.png)
 
 # Procedimientos almacenados en el servidor.
 
@@ -231,7 +231,7 @@ Para hacer esto en la mayoría de los sistemas podemos utilizar:
 
 **Eventos de servidor**. Un evento de servidor consiste en detectar que pasa algo en la aplicación y hacer que el sistema responda a este suceso de forma automática. Los eventos de servidor son creados a nivel de objetos y no de base de datos, como ocurre en los procedimientos. Podemos definir los eventos de servidor a través de los menús de la aplicación, no siendo necesario introducirnos en la base de datos para programar la acción deseada.Un procedimiento almacenado en PostgreSQL se puede escribir en múltiples lenguajes de programación. Para definir un procedimiento en pgAdmin utilizamos la siguiente sintaxis:
 
-![Untitled](11%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2023.png)
+![Untitled](300%20📈%20SGE%202022-2023/01%20UD3%20Organización,%20consulta%20y%20tratamiento%20de%20la%20información/Untitled%2023.png)
 
 En el código podemos escribir cualquier instrucción del lenguaje SQL para el
 manejo de base de datos. Los elementos entre corchetes son opcionales, no es

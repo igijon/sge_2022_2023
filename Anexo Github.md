@@ -5,9 +5,9 @@
 
 - En Github blame indica quién ha añadido los cambios
 
-![Untitled](11%20📈%20SGE%202022-2023/Anexo%20Github/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/Anexo%20Github/Untitled.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%201.png)
 
 - Hablar de Pull Request
 
@@ -19,7 +19,7 @@
 
 - Issue: En Github es como una pregunta, para comunicarse con los miembros del equipo. Con un mensaje de commit se puede cerrar automáticamente un issue.
 
-![Untitled](11%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%202.png)
 
 Las issues no se pueden borrar fácilmente, es mejor cerrarlas indicando que se abrió por error. 
 
@@ -47,7 +47,7 @@ Los links de una wiki se pueden comunicar… podemos enlazar unas páginas con o
 
 El sidebar me permite customizar links a nuestras páginas.
 
-![Untitled](11%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/Anexo%20Github/Untitled%203.png)
 
 - Un proyecto será una pizarra en la que podemos anotar todo y dar seguimiento.
 

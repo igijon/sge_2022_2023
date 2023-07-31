@@ -5,7 +5,7 @@
 
 La herencia por prototipo es la más parecida a la programación tradicional. El objeto nuevo se almacena en otra tabla distinta que contiene las del objeto original más las nuevas.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled.png)
 
 La herencia por prototipo en Odoo no es la solución ideal si sólo queremos ampliar cosas de Odoo porque Odoo ya está hecho y normalmente se extienden cosas.
 
@@ -112,18 +112,18 @@ Y finalmente en la vista formulario de student (`views.xml`), añado en el noteb
  </notebook>
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%201.png)
 
 Existen en este tipo de herencia por prototipo tablas diferentes.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%202.png)
 
 <aside>
 💥 Problema: si desde el estudiante quiero crear una tarea de cualquier tipo, no me asigna el estudiante desde el cual estoy creando la tarea al mostrarlo en el formulario.
 
 </aside>
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%203.png)
 
 Para solucionar esto debemos hacer la vista formulario y no mostrar el campo porque dicho campo se calcula automáticamente a partir del estudiante.
 
@@ -183,18 +183,18 @@ Queremos que el estudiante se pase por contexto al crear una tarea grupal. Recor
 
 En el fichero `views.xml`, en el formulario de estudiante: `school.student_form`, vamos a tener lo siguiente:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%204.png)
 
 Después, en el modelo, haremos: (`models.py`)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%205.png)
 
 De esta manera, al crear una tarea grupal aparecerá nuestro estudiante y además, si tenemos en `tasks.xml`:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%206.png)
 
 Sólo aparecerán los estudiantes para ser seleccionados.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%207.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%208.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%205%20Herencia%20de%20prototipos/Untitled%208.png)

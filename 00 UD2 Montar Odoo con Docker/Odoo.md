@@ -27,7 +27,7 @@ docker start -a odoo
 docker stop odoo
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled.png)
 
 # Persistencia
 
@@ -49,7 +49,7 @@ docker run -v odoo-data:/var/lib/odoo -d -p 8069:8069 --name odoo --link db:db -
 
 La ruta /var/lib/odoo utilizada como punto de montaje del volumen debe coincidir con el directorio data_dir en el archivo de configuración de Odoo.
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%201.png)
 
 Vamos a probar a crear una BDD de prueba, con datos demo.
 
@@ -57,7 +57,7 @@ Una vez hecho esto, instalaremos algunos módulos: Inventario, Ventas, CRM, Fact
 
 Después… si probamos a parar el contenedor y volverlo a activar… volvemos al estado que teníamos, es decir, no hemos perdido los datos.
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%202.png)
 
 # Ejecutar Odoo con una configuración personalizada
 
@@ -73,7 +73,7 @@ docker run -v odoo-data:/var/lib/odoo -v /Users/inma/Documents/config_odoo:/etc/
 
 En este caso, cargará el fichero `odoo.conf` que se encuentre en la ruta `/Users/inma/Documents/config_odoo` porque estoy diciendo que lo mapee con el directorio `/etc/odoo` del contenedor, por lo tanto leerá de mi directorio ese fichero de configuración.
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%203.png)
 
 # Montando addons personalizados
 
@@ -137,6 +137,6 @@ En el mismo directorio tendremos dos directorios:
 - `config`: donde tendremos el fichero `odoo.conf` que queremos cargar para arrancar odoo.
 - `addons`: donde tendremos los distintos módulos que desarrollaremos para odoo.
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%204.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/00%20UD2%20Montar%20Odoo%20con%20Docker/Odoo/Untitled%205.png)

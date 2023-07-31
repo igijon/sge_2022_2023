@@ -8,7 +8,7 @@ Por ejemplo, normalmente no utilizamos clientes para crear nuevos tipos de clien
 
 [Chapter 13: Inheritance - Odoo 16.0 documentation](https://www.odoo.com/documentation/16.0/developer/howtos/rdtraining/13_inheritance.html)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled.png)
 
 El modelo que más se ajusta a lo que conocemos en Java o Python es el denominado ******************************************herencia por prototipos****************************************** (marcada en gris más oscuro) y es en la que a partir del modelo original, en base a la herencia, se genera otro nuevo independiente. En Odoo si se modifica el original, también se modificaría el nuevo y se almacenarían en tablas diferentes (hablamos de modelos en Odoo).
 
@@ -25,7 +25,7 @@ También tenemos un último tipo que es la *************************************
 
 Vamos a hacer que los estudiantes sean clientes de Odoo. Habría que ampliar la clase cliente. Para saber qué modelo es el que queremos ampliar… 
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%201.png)
 
 Vemos que es `res.partner`. Es el modelo que puede ser cliente, usuario, empresa… todos ellos son elementos de `res.partner`.
 
@@ -344,11 +344,11 @@ access_school_teacher,school.teacher,model_school_teacher,base.group_user,1,1,1,
 
 </aside>
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%202.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%203.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%204.png)
 
 <aside>
 💥 ********************NOTA IMPORTANTE:******************** Si aún borrando el modelo desde la BDD sigue fallando es porque se ha generado una inconsistencia y deberemos eliminar el volumen correspondiente y volver a generarlo para restaurar la instalación de Odoo en Docker. **Lo mejor en este caso es desinstalar el módulo school antes de generar cambios tan agresivos en los modelos.**
@@ -357,9 +357,9 @@ access_school_teacher,school.teacher,model_school_teacher,base.group_user,1,1,1,
 
 Una vez instalado de nuevo, en el modelo res.partner podemos ver que están los campos añadidos y cuando entramos en ******************************school/students****************************** vemos que al pinchar en cualquier de ellos aparecen las vistas de **************cliente**************:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%205.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%206.png)
 
 <aside>
 💥 Faltaría hacer la herencia en la vista, por eso no se muestran los datos.
@@ -407,13 +407,13 @@ Además del action que teníamos, añadimos el siguiente para que coja nuestras 
 
 De esta forma quedan enlazados y vemos que para nuestros estudiantes coge nuestras vistas y para los clientes del resto de módulos coge las que están establecidas por Odoo.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%207.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%208.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%208.png)
 
 Para ver las prioridades con las que se cargan unas vistas u otras, podemos entrar en la vista kanban de cliente, por ejemplo:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%209.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%209.png)
 
 Vemos que tiene un número de secuencia 16. Puedo cambiar las secuencias estableciendo para el nuestro otra secuencia con esto y de este modo el nuestro tendría menos prioridad que el propio de Odoo en el caso de tener algún problema de prioridades (sobre todo en versiones antiguas de Odoo).
 
@@ -423,7 +423,7 @@ Vemos que tiene un número de secuencia 16. Puedo cambiar las secuencias estable
 
 Ahora vamos a adaptar las cosas a las que ya tenía Odoo, por ejemplo la foto que si miramos en el form de Odoo se corresponde con el field `image_1920`. Lo cambio en el form y en el kanban.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2010.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2010.png)
 
 <aside>
 💥 En los datos de demo en lugar de photo tendremos que establecer el campo `image_1920` con la imagen en base64 y después veremos cómo limitar el tamaño de la foto.
@@ -467,7 +467,7 @@ Y lo añadimos al action.
     </record>
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2011.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2011.png)
 
 Pero queremos que nos aparezca por defecto.
 
@@ -483,7 +483,7 @@ Podríamos hacerlo con un domain en el action aunque sería muy agresivo porque 
     </record>
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2012.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2012.png)
 
 Ahora vamos a probar a hacerlo de otra manera. Utilizando el field `context`que es un field especial que le pasa la información al cliente web (no formando parte de la consulta de BDD como antes). En este caso, el filtro se hace en el cliente y se extrae en el cliente.
 
@@ -501,7 +501,7 @@ La vista lo que entiende es JavaScript.
 </record>
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2013.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2013.png)
 
 Aparece el filtro Is Student por defecto.
 
@@ -519,7 +519,7 @@ Si además quiero que cada vez que yo creo un estudiante, se quede marcada esa o
     </record>
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2014.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2014.png)
 
 Si quisiésemos modificar la vista de `res.partner` añadiendo los datos de student (teniendo en cuenta que de este modo aparecerá en los students y también en los clientes de cualquier job haríamos lo siguiente:
 
@@ -591,10 +591,10 @@ No olvidemos comentar las vistas que establecimos en los actions:
 
 De esta manera cuando visualizamos los estudiantes vemos:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2015.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2015.png)
 
 Pero si vamos a clientes en el módulo Ventas obtenemos:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2016.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%204%20Principios%20de%20herencia%20en%20Odoo/Untitled%2016.png)
 
 De momento lo dejaremos como lo teníamos antes, cargando las vistas nuestras para los estudiantes.

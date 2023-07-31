@@ -6,7 +6,7 @@ Vamos a desarrollar un módulo de Odoo para la compañía **********************
 
 Para nuestro sistema, tendremos **************************como mínimo************************** que gestionar la siguiente información:
 
-![Untitled](11%20📈%20SGE%202022-2023/Desafío%204%20Gestiónate/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/Desafío%204%20Gestiónate/Untitled.png)
 
 - ******************************Tecnologías:****************************** este modelo guardará información sobre una tecnología concreta, descripción, logo de la tecnología…
 - **********************Clientes:********************** almacenaremos información relacionada con los datos personales, empresa…

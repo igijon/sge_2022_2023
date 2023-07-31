@@ -14,59 +14,59 @@ El ORM en Odoo es implícito. Cada declaración de clases implica el mapeo en BD
 
 Para ver el ORM vamos a arrancar Odoo en modo shell:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled.png)
 
 `self` es el usuario en el que hemos entrado. 
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%201.png)
 
 Así puedo acceder a los fields del singleton que referencia a los usuarios.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%202.png)
 
 Así puedo acceder a todos los usuarios.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%203.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%204.png)
 
 `env` es el environment y si recupero res.partner, asociado a ese string se encuentra el modelo res.partner.  `Env` es una variable, o un objeto y a través de él podemos acceder a todas las tablas de la BDD. Para buscar tendría que hacer search:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%205.png)
 
 Aquí aparecen todos los contactos de Odoo.
 
 Puedo buscar por un criterio:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%206.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%207.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%208.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%208.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%209.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%209.png)
 
 Operaciones básicas: unión, intersección, resta….
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2010.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2010.png)
 
 La programación funcional es compatible con la estructurada pero es diferente y se programa de forma distinta. Python tiene la función filter, map, iterables que son típicos de la programación funcional.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2011.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2011.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2012.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2012.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2013.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2013.png)
 
 Si hay cosas repetidas `mapped` no las duplica.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2014.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2014.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2015.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2015.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2016.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2016.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2017.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2017.png)
 
 Mapea el contenido como deseemos establecerlo.
 
@@ -75,41 +75,41 @@ Mapea el contenido como deseemos establecerlo.
 
 </aside>
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2018.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2018.png)
 
 Es un diccionario de cosas. Lo utilizamos para enviar información entre elementos que no son 100% compatibles. El cliente y servidor se comunican con JSON por ejemplo. Context nos permite pasar información de cambios de protocolo… y otras cosas. Una función puede cambiar el contexto y todas las que se creen a partir de ahí tendrán ese contexto. Es una forma de pasar información cuando no hay otra forma de enviarse.
 
 Por ejemplo, pasábamos el active_id entre formularios pero para eso debo estar en un formulario.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2019.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2019.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2020.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2020.png)
 
 No tengo formulario activo porque no estoy en ningún formulario.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2021.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2021.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2022.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2022.png)
 
 `search` actúa sobre el modelo, no sobre la búsqueda anterior.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2023.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2023.png)
 
 Así sí porque he unido los criterios de búsqueda y se están mostrando los que cumplen las dos condiciones.
 
 Si quiero que se cumpla una u otra condición tenemos que poner `|` la tubería.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2024.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2024.png)
 
 Es notación polaca inversa.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2025.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2025.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2026.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2026.png)
 
 A partir del segundo resultado.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2027.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%207%20ORM/Untitled%2027.png)
 
 ![Untitled](Untitled%2028.png)
 

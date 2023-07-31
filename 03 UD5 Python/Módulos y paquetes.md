@@ -14,7 +14,7 @@ Por ejemplo, si quiero instalar:
 pip (pip3) install colored
 ```
 
-![Untitled](11%20📈%20SGE%202022-2023/03%20UD5%20Python/Módulos%20y%20paquetes/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/03%20UD5%20Python/Módulos%20y%20paquetes/Untitled.png)
 
 También los puedes añadir en el IDE… mediante `Python packages`
 
@@ -48,4 +48,4 @@ pylint name.py -r y
 
 Nos muestra un report
 
-![Untitled](11%20📈%20SGE%202022-2023/03%20UD5%20Python/Módulos%20y%20paquetes/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/03%20UD5%20Python/Módulos%20y%20paquetes/Untitled%201.png)

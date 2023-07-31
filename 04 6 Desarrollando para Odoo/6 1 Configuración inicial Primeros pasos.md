@@ -52,13 +52,13 @@ volumes:
 
 </aside>
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled.png)
 
 En el fichero .conf, podemos ver entre otras cosas como sabemos: usuario, usuario de la BDD y contraseña.
 
 Tenemos un servicio web y lo que vemos en el navegador es un cliente web que es una aplicación en JS muy completa. Si abrimos las herramientas de desarrollo en el navegador, en la pestaña de red y refrescamos:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%201.png)
 
 Lo primero que demanda es un web/ que envía una página html que básicamente inicia el cliente web:
 Luego comienza a descargar css y js del servidor.
@@ -78,27 +78,27 @@ A su vez, en docker-compose.yaml tenemos mapeado dicho directorio de la siguient
 
 Para crear un módulo nuevo de ejemplo, vamos a abrir el terminal del contenedor de odoo y ejecutamos el siguiente comando dentro del directorio de módulos:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%202.png)
 
 Tenemos que comprobar que lo vemos desde el directorio mapeado:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%203.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%204.png)
 
 Vamos a ver si podemos instalarlo desde la aplicación (aunque aún no tiene funcionalidad). Este módulo se ha creado simplemente con el esqueleto de un módulo base para Odoo.
 
 Para instalarlo tenemos que tener **********el modo de desarrollador activado en ajustes.**********
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%205.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%206.png)
 
 Ya podemos instalarlo. Además, podemos actualizarlo cada vez que cambiemos o añadamos funcionalidad. Desde ******************Aplicaciones, Actualizaciones…******************
 
 Instalamos el módulo pero aún no ocurre nada porque no hemos codificado nada para dicho módulo.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%201%20Configuración%20inicial%20Primeros%20pasos/Untitled%207.png)
 
 <aside>
 💡 Añadimos control de versiones.

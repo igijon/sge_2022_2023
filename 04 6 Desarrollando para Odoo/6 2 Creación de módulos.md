@@ -13,7 +13,7 @@ automáticamente se mapea en la BDD aislándonos del modelo relacional completo.
 
 # MVC
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled.png)
 
 - El modelo son las clases diseñadas en Python.
 - Las vistas están en el cliente web y están definidas como ficheros XML.
@@ -37,7 +37,7 @@ modelo relacional.
 
 Si nos situamos en el módulo ************Ventas************. Si seleccionamos un prespuesto y nos situamos con el ratón encima, podemos obtener la información de desarrollo:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%201.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%201.png)
 
 Podemos ver que el modelo es ********************sale.order******************** y tu tabla en BDD sería **********************sale_order,********************** como vimos en su momento.
 
@@ -59,7 +59,7 @@ Las clases y los atributos ****************siempre**************** se escriben c
 
 Los módulos de Odoo están compuestos por distintos ficheros.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%202.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%202.png)
 
 El fichero `__**manifest__**.py` define la estructura básica (__**openerp**__.py en versiones anteriores), hay XML que definen el contenido de la BDD, otros XML orientados a definir la forma que van a tener las vistas y otros XML para los reports (informes) y algunos ficheros Python que nos servirán para definir modelos y controladores y los wizards (asistentes).
 
@@ -78,20 +78,20 @@ El fichero `__**manifest__**.py` define la estructura básica (__**openerp**__.p
 - Archivo de importación de Python
 - Inicialmente tiene este contenido:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%203.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%203.png)
 
 - `controllers` es el directorio donde localizaremos los controladores y `models` es el directorio donde localizaremos los modelos.
 - Dentro de models y controllers también hay un __**init__**.py con la información de importación correspondiente…
 
 # Fichero `__**manifest__**.py`
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%204.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%204.png)
 
 Contiene un diccionario que será interpretado cuando arrancamos en el menú de Odoo, la parte de aplicaciones:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%205.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%205.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%206.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%206.png)
 
 - De este fichero hay que destacar las secciones: ******************************************depends, data y demo.******************************************
     - ************************************depends:************************************ indica los módulos que deben estar instalados para la instalación de este módulo. Si hace falta, se instalarán dichas dependencias.
@@ -99,11 +99,11 @@ Contiene un diccionario que será interpretado cuando arrancamos en el menú de 
     - ************demo:************ igual que data pero cuando está seleccionada la casilla demo al crear la BDD en Odoo.
 - Los archivos python que nos interesan de momento son los que están dentro de **************models.************** De momento aparece comentado, pero si descomentamos, nos queda un modelo funcional.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%207.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%207.png)
 
 - Si hacemos lo mismo con `views/view.xml`, vemos código comentado que si activamos se convierten en vistas básicas pero funcionales.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%208.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%208.png)
 
 # Modelos.
 
@@ -127,14 +127,14 @@ Nos permiten declarar:
 
 # Creación del primer modelo
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%209.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%209.png)
 
 - Un field es un campo relacionado en el ORM. Definimos por ejemplo `name = fields.Char()` porque queremos que se guarde en el modelo, en la BDD.
 - Para entrar como root y reiniciar el servicio de odoo.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2010.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2010.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2011.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2011.png)
 
 <aside>
 💡 También podríamos reiniciar el contenedor.
@@ -148,56 +148,56 @@ Nos permiten declarar:
 
 </aside>
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2012.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2012.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2013.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2013.png)
 
 - Tenemos que destacar el campo ******id****** que es autoincrementable y la PK.
 - De momento, este modelo no es accesible desde ningún sitio ⇒ Vamos a crear una vista editando `/views/views.xml`
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2014.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2014.png)
 
 - `record` implica que será un registro de la BDD. Este registro necesita saber dónde se van a guardar las cosas.
 - Este registro se almacena en la tabla `ir.ui.view`, va a tener un id único `school.sudent_list` y va a tener un nombre (que no es lo más importante), un modelo, que en este caso sería `school.student`, un archivo xml con un campo que mostrará la vista que en este caso será el que tenemos creado en el .py del modelo student, que es `name`.
 - Si reiniciamos el servicio y actualizamos el módulo podemos ver en **********************************************Ajustes/Técnico/Interfaz de usuario/Vistas.**********************************************
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2015.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2015.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2016.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2016.png)
 
 - Podemos ver que el contenido del fichero coincide con el del field arch del xml.
 - Esta vista aún es inaccesible porque no hay ningún menú que permita acceder a ella.
 - Para relacionarlo y ver una lista de estudiantes de momento, voy a descomentar en el fichero `views.xml` el action tal y como vemos a continuación:
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2017.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2017.png)
 
 - Esto es un ************action************. Un action relaciona un menú, un botón, con una acción que se desencadena en el cliente y se convierte en una petición al servidor. En este caso este action se transformará en una petición JS demandando al servidor las vistas tree y form del modelo student y el servidor retornará la vista creada tree y una vista form generada automáticamente para el modelo student ya que no tenemos una programada por el momento.
 - Para que el action funcione, el cliente debe tener dicho menú. Buscamos la parte de menú al final, la descomentamos y la codificamos en el mismo `views.xml`.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2018.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2018.png)
 
 - Tenemos que tener en cuenta que el action del menú ítem: `school.student_list` ****************************tiene que coincidir con el id del action que hemos creado antes: `school.action_student_window`.
 - Si guardamos y reiniciamos, tampoco funcionará porque a partir de la versión 11, falta un detalle obligatorio de seguridad.
 - Editamos el fichero `ir.model.access.csv`
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2019.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2019.png)
 
 - Hemos actualizado los datos con los permisos para módulo y modelo.
 - Para cada modelo tendremos que crear una línea y en función de los grupos de usuarios que puedan tener permisos, tendrá restricciones.
 - Falta una única cosa en `__**manifest__**.py`: descomentar la línea relacionada con este fichero de seguridad.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2020.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2020.png)
 
 - Ahora al reiniciar y actualizar deberíamos ver el menú y las vistas correspondientes.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2021.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2021.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2022.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2022.png)
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2023.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2023.png)
 
 - Podría crear estudiantes, porque aunque la única vista que tengo es la de lista y no he creado ningún formulario por ejemplo, coge la vista por defecto.
 
-![Untitled](11%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2024.png)
+![Untitled](300%20📈%20SGE%202022-2023/04%206%20Desarrollando%20para%20Odoo/6%202%20Creación%20de%20módulos/Untitled%2024.png)
 
 - De este modo tendríamos creado un módulo básico con funcionalidad básica a partir de un modelo básico con vistas básicas, permisos…
